@@ -4,7 +4,7 @@ namespace App;
 
 class Products
 {
-    public $product = array(
+    public $stock = array(
         array(
             "id"        => 1,
             "name"      => "Galletas de Cordero y arroz Laika by Raush",

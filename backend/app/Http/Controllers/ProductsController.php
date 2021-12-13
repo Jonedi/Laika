@@ -18,16 +18,16 @@ class ProductsController extends Controller
 
     public function index()
     {
-        $getProducts = file_get_contents("http://".$_SERVER['SERVER_NAME']."/products.json");
+        $getProducts = new Products;
 
-        /* var_dump($getProducts); */
+        /* $getProducts = file_get_contents("http://".$_SERVER['SERVER_NAME']."/products.json");
 
-        $products = json_decode($getProducts, true);
+        $products = json_decode($getProducts, true); */
 
         $data = [
             'status'    => 'success',
             'code'      => 200,
-            'products'=> $products
+            'products'  => $getProducts
         ];
 
         return response()-> json($data);
