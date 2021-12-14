@@ -1,4 +1,4 @@
-# Evidecia Prueba Laika
+# Evidencia Prueba Laika
 El siguiente repositorio contiene el desarrollo de **backend** en *Laravel* y **frontend** en *Vue* como prueba solicitada para el proceso de selección.
 El siguiente desarrollo se explica a continuación:
 1. Guardar todo el repositorio en la raiz del servidor web
