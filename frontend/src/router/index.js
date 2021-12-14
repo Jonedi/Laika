@@ -24,6 +24,31 @@ const router = new VueRouter({
           component: () => import('@/views/Home.vue')
         },
         {
+          path: 'Perro',
+          name: 'perro',
+          component: () => import('@/views/Home.vue')
+        },
+        {
+          path: 'Gato',
+          name: 'gato',
+          component: () => import('@/views/Home.vue')
+        },
+        {
+          path: 'Ofertas',
+          name: 'ofertas',
+          component: () => import('@/views/Home.vue')
+        },
+        {
+          path: 'Servicios',
+          name: 'servicios',
+          component: () => import('@/views/Home.vue')
+        },
+        {
+          path: 'Blog',
+          name: 'blog',
+          component: () => import('@/views/Home.vue')
+        },
+        {
           path: '*',
           name: 'FourOhFour',
           component: () => import('@/views/Home.vue'),

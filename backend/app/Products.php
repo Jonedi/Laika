@@ -14,30 +14,23 @@ class Products
         ),
         array(
             "id"        => 2,
-            "name"      => "Galletas de Cordero y arroz Laika by Raush",
+            "name"      => "Salvaje Snacks Efecto Calmante",
             "stars"     => 5,
-            "price"     => 5942,
+            "price"     => 5653,
             "discount"  => 0.1
         ),
         array(
             "id"        => 3,
-            "name"      => "Galletas de Cordero y arroz Laika by Raush",
+            "name"      => "Salvaje Snacks Pollo Cordero y Salmón",
             "stars"     => 5,
-            "price"     => 5942,
+            "price"     => 4803,
             "discount"  => 0.1
         ),
         array(
             "id"        => 4,
-            "name"      => "Galletas de Cordero y arroz Laika by Raush",
+            "name"      => "Cozy Hugs Comodisimos",
             "stars"     => 5,
-            "price"     => 5942,
-            "discount"  => 0.1
-        ),
-        array(
-            "id"        => 5,
-            "name"      => "Galletas de Cordero y arroz Laika by Raush",
-            "stars"     => 5,
-            "price"     => 5942,
+            "price"     => 238000,
             "discount"  => 0.1
         )
     );

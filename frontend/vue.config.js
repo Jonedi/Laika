@@ -18,9 +18,9 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/scss/_mixins.scss'),
-        path.resolve(__dirname, './src/scss/_variables.scss'),
-        path.resolve(__dirname, './src/scss/_fonts.scss'),
+        path.resolve(__dirname, './src/sass/_mixins.scss'),
+        path.resolve(__dirname, './src/sass/_variables.scss'),
+        path.resolve(__dirname, './src/sass/_fonts.scss'),
       ],
     })
 }
