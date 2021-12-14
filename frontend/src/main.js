@@ -6,11 +6,9 @@ import vuetify from './plugins/vuetify'
 import VuePageTransition from 'vue-page-transition'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import carousel from 'vue-owl-carousel'
 import 'animate.css'
 import { camelCase, upperFirst } from 'lodash'
 
-Vue.component("carousel", carousel);
 Vue.use(VuePageTransition);
 
 Vue.config.productionTip = false

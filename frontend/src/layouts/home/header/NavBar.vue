@@ -2,40 +2,34 @@
     <div>
         <v-app-bar
             id="home-app-bar"
-            color='primary'
-            height= "90"
+            color='white'
+            height= "70"
+            width="100%"
+            class="d-flex justify-center boxsh-none"
         >
-            <v-list-item class="logo-laika">
-                <router-link to="/" >
-                    <!-- <img :src="require('@/assets/logo/Logo1.webp')" alt="logo Argolider" class="m-logo"> -->
-                </router-link>
-            </v-list-item>
-
-            <v-spacer />
-            
             <div class="navbar">
-               <!--  <v-tabs
+                <v-tabs
                     class="hidden-sm-and-down"
-                    grow
+                    centered
                     background-color="transparent"
                 >
                     <v-tab
                         v-for="(name, i) in items"
                         :key="i"
-                        :to="{ name }"
+                        :to="name.path"
                         :exact="name === 'Home'"
                         :ripple="false"
                         active-class="text-white"
                         class="font-weight-normal text-xl-subtitle-1 text-lg-subtitle-2"
                         text
                     >
-                        {{ name }}
+                        {{ name.txt }}
                     </v-tab>
                 </v-tabs>
                 <v-app-bar-nav-icon
                     class="hidden-md-and-up"
                     @click="drawer = !drawer"
-                /> -->
+                />
             </div>
         </v-app-bar>
 
@@ -58,9 +52,11 @@ export default {
         return {
             drawer: null,
             items: [
-                /* 'Nosotros',
-                'Proyectos',
-                'Contacto' */
+                {path: 'perro', txt: 'Compra para Perro'},
+                {path: 'gato', txt: 'Compra para Gato'},
+                {path: 'ofertas', txt: 'Ofertas'},
+                {path: 'servicios', txt: 'Servicios'},
+                {path: 'blog', txt: 'Blog'},
             ],
         }
     },
@@ -68,5 +64,13 @@ export default {
 </script>
 
 <style lang="scss">
-
+#home-app-bar {
+    @include mq(max, 960px) {
+        .v-toolbar__content { background-color: $cPrimary; }
+        .mdi-menu::before { color: white; }
+    }
+}
+.boxsh-none {
+    box-shadow: none;
+}
 </style>

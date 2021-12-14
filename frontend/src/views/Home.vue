@@ -9,6 +9,7 @@ export default {
   mixins: [
     LoadSections([
       'home-banner',
+      'home-carousel'
     ]),
   ],
 
